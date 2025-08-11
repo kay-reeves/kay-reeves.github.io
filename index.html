@@ -1,9 +1,128 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS Styles: Typography</title>
+</head>
 <body>
-  <h1>KAYLA REEVES</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <h1>CSS: Visual Rules</h1>
+    <h2>Typography</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">&lt;font-family&gt;</td>
+                <td>Font Family</td>
+                <td>Property used to change the typeface of text on your page.</td>
+            </tr>
+            <tr>
+                <td scope="row">&lt;font-weight&gt;</td>
+                <td>Font Weight</td>
+                <td>Property controls how bold or thing the font is.</td>
+            </tr>
+            <tr>
+                <td scope="row">&lt;font-style&gt;</td>
+                <td>Font Style</td>
+                <td>Property used to set the style of the font, primarily to control whether the text appears in a normal, italic, or oblique face.</td>
+            </tr>
+             <tr>
+                <td scope="row">&lt;text-transformation&gt;</td>
+                <td>Text Transform</td>
+                <td>Property used to control the case of text, allowing for transformation to uppercase, lowercase, or capitalized forms without altering the original content.</td>
+            </tr>
+        </tbody>
+    </table>
 
+<!-- This section lists additional notes for each typography visual rules--> 
+
+    <h2>Additional Notes</h2>
+    <h3>Font Family</h3>
+        <ul>
+            <li>Websafe fonts are a group of fonts supported across most browsers and are a good fall back font, if other fonts don't work</li>
+            <li>You can have up to four (4) fonts in a font stack. <strong>For example: font-family: Caslon, Georgia, 'Times New Roman', serif;.</strong></li>
+            <li>It is recommended to use quotation when using a typeface with multiple words.</li>
+        </ul>
+    <h3>Font Weight</h3>
+        <ul>
+            <li>Values include bold, normal (default), lighter (one weight lighter), and bolder (one weight bolder).</li>
+            <li>Numerical values range from 1 (lightest) to 1000 (boldest) but it is common to use increments of 100. 400 is equivalent to normal and 700 is equivalent to bold.</li>
+            <li>Not all fonts can be assigned a numeric weight and not all numeric fonts are available to all font. Check the MDN for each assigned font.</li>
+        </ul>
+    <h3>Font Style</h3>
+        <ul>
+            <li>Normal: Displays the text in a normal, upright style (the default).</li>
+            <li>Italic: Displays the text in an italicized style, which typically uses a specially designed italic version of the font.</li>
+            <li>Oblique: Displays the text in an oblique style, which is often a programmatically slanted version of the normal font if a true italic version is not available. While similar to italic, oblique fonts are generally less common and may be rendered differently across browsers.</li>
+        </ul>
+
+ <!-- This section is for the table for text layouts--> 
+
+    <h2>Text Layout</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td scope="row">letter-spacing: value</td>
+                <td>Letter Spacing</td>
+                <td>Property controls the amount of horizontal space between characters within a block of text.</td>
+            </tr>
+            <tr>
+                <td scope="row">word-spacing: value</td>
+                <td>word-spacing</td>
+                <td>Property controls the amount of space between words in a text.</td>
+            </tr>
+            <tr>
+                <td scope="row">line-height: value;</td>
+                <td>Line Height</td>
+                <td>Property specifies the height of each line of text within an element.</td>
+            </tr>
+             <tr>
+                <td scope="row">text-align: value</td>
+                <td>Text Align</td>
+                <td>Property controls the horizontal alignment of inline-level content within a block-level element. </td>
+            </tr>
+        </tbody>
+    </table>    
+
+<!-- This section lists additional notes for text layouts in bullet points-->
+
+    <h2>Additional Notes</h2>
+    <h3>Letter Spacing</h3>
+        <ul>
+            <li>You can specify a precise amount of space using units like px (pixels), em (relative to the font size of the element), rem (relative to the root element's font size), or pt (points).</li>
+        </ul>
+    <h3>Word Spacing</h3>
+        <ul>
+            <li>It allows for adjusting the default spacing to increase or decrease the visual separation between individual words within an element.</li>
+            <li>A specific length unit (e.g., px, em, rem, pt) can be used to define the exact amount of space to add or subtract between words. Negative values are permitted to reduce the spacing.</li>
+        </ul>
+    <h3>Line Height</h3>
+        <ul>
+            <li>Value can be a unitless number. This is a multiplier of the element's own font size and is generally the preferred method for better inheritance and responsiveness. For example, line-height: 1.5; means the line height will be 1.5 times the font size of the element.</li>
+            <li>Changing the font size will auto adjust the height if used.</li>
+        </ul>
+    <h3>Text Align</h3>  
+        <ul>
+            <li>Left: Aligns content to the left edge of the container (default for left-to-right languages).</li>
+            <li>Right: Aligns content to the right edge of the container.</li>
+            <li>Center: Centers the content horizontally within the container.</li>
+            <li>Justify: Distributes space evenly between words to make lines of text flush with both the left and right edges, creating a clean, block-like appearance.</li>
+            <li>Start: Aligns content to the beginning of the text direction (e.g., left for left-to-right languages, right for right-to-left languages).</li>
+            <li>End: Aligns content to the end of the text direction (e.g., right for left-to-right languages, left for right-to-left languages).</li>
+        </ul>
+</body>
 </html>
